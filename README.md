@@ -29,3 +29,28 @@ We will be primarily evaluating based on how well the search works for users. A 
 2. Heroku hosting - The project includes a Heroku Procfile and, in its
    current state, can be deployed easily on Heroku's free tier.
 3. In your submission, share with us what changes you made and how you would prioritize changes if you had more time.
+
+
+## Changes
+
+### - Front-end
+
+1. Created a separate front-end app: `/client`
+2. Implemented debounced search on front-end.
+3. Used styled-components for styling.
+4. Used Tyepscript.
+5. Added error handling and lazy loading.
+
+### - Back-end
+
+1. Resolved CORS issue.
+2. Enabled case-insensitive search.
+3. Reduced the range of sliced text involving the query and sorted out out-bound exceptions.
+
+## How to run
+
+1. Clone the project: `git clone https://github.com/savvytitan/shakesearch.git`
+2. Run back-end app: `cd server && go run main.go`
+3. Install dependencies of front-end app: `cd client && npm i`
+4. Run front-end app: `npm run start`
+5. Go to `http://localhost:3000`
